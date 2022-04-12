@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-04-12T09:20:15.816Z" agent="5.0 (Windows)" etag="W7G4WWoGBCy1QFSl573m" version="17.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2022-04-12T11:11:02.516Z" agent="5.0 (Windows)" etag="hlqGd-oyk3S7aE2AX4xn" version="17.4.3" type="github">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="JMM、8大原子操作">
-    <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1580" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -38,9 +38,6 @@
         </mxCell>
         <mxCell id="mp_lwEm3eIpkVCGBcad2-9" value="initFlag = false" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="410" y="485" width="120" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="mp_lwEm3eIpkVCGBcad2-46" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mp_lwEm3eIpkVCGBcad2-10" target="mp_lwEm3eIpkVCGBcad2-27">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="mp_lwEm3eIpkVCGBcad2-10" value="主内存" style="swimlane;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="265" y="450" width="410" height="80" as="geometry" />
@@ -86,8 +83,8 @@
         <mxCell id="mp_lwEm3eIpkVCGBcad2-26" value="initFlag = false" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
           <mxGeometry x="760" y="385" width="120" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mp_lwEm3eIpkVCGBcad2-42" value="6.wirte" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mp_lwEm3eIpkVCGBcad2-27" target="mp_lwEm3eIpkVCGBcad2-9">
-          <mxGeometry x="0.3333" y="10" relative="1" as="geometry">
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-67" value="6.wirte" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontColor=#333333;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mp_lwEm3eIpkVCGBcad2-27" target="mp_lwEm3eIpkVCGBcad2-9">
+          <mxGeometry x="0.3333" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
@@ -96,6 +93,48 @@
         </mxCell>
         <mxCell id="mp_lwEm3eIpkVCGBcad2-41" value="5.store" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mp_lwEm3eIpkVCGBcad2-24" target="mp_lwEm3eIpkVCGBcad2-27">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-47" value="volatile - 能够保证线程能够&lt;font color=&quot;#3399FF&quot;&gt;及时&lt;/font&gt;发现变量的更改（修饰成员变量）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#333333;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="650" width="450" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-48" value="1.功能：持有拷贝变量的线程，舍弃现有拷贝变量，重新拷贝新的变量；" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-47">
+          <mxGeometry y="30" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-49" value="2.字节码：在变量描述上，增加flags：ACC_VOLATILE ；" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-47">
+          <mxGeometry y="60" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-50" value="3.硬件：" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-47">
+          <mxGeometry y="90" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-51" value="volatile - 能够保证线程能够&lt;font color=&quot;#3399FF&quot;&gt;及时&lt;/font&gt;发现变量的更改（修饰成员变量）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#333333;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="50" y="650" width="450" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-52" value="1.功能：持有拷贝变量的线程，舍弃现有拷贝变量，重新拷贝新的变量；" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;fontStyle=0" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-51">
+          <mxGeometry y="30" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-53" value="2.字节码：在变量描述上，增加flags：ACC_VOLATILE ；" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-51">
+          <mxGeometry y="60" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-54" value="3.硬件：" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-51">
+          <mxGeometry y="90" width="450" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-55" value="synchronized - 保证原子性" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#333333;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="520" y="650" width="280" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-56" value="原因：Load，操作，Store不能保证原子性" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-55">
+          <mxGeometry y="30" width="280" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-59" value="volatile - 有序性（内存屏障）" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;fontColor=#333333;html=1;" vertex="1" parent="WIyWlLk6GJQsqaUBKTNV-1">
+          <mxGeometry x="820" y="650" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-61" value="原因：指令重排序（缓存）" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-59">
+          <mxGeometry y="30" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-60" value="功能：volatile禁止重排优化" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-59">
+          <mxGeometry y="60" width="250" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="mp_lwEm3eIpkVCGBcad2-62" value="实现：内存屏障" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;" vertex="1" parent="mp_lwEm3eIpkVCGBcad2-59">
+          <mxGeometry y="90" width="250" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

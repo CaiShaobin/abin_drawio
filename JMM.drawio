@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-13T14:34:06.016Z" agent="5.0 (Windows)" etag="HG7-c9EUg5vjLltoYZwj" version="17.4.3" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-04-13T14:34:54.009Z" agent="5.0 (Windows)" etag="hniEtkiwyjmOG6V_bl6g" version="17.4.3" type="github" pages="3">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="JMM、8大原子操作">
     <mxGraphModel dx="1422" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -476,7 +476,7 @@
         <mxCell id="ocYWoTMkez_evRyGjRub-65" value="OS" style="rounded=0;whiteSpace=wrap;html=1;fontColor=#000000;fillColor=#FFFFFF;verticalAlign=top;" vertex="1" parent="1">
           <mxGeometry x="728" y="725" width="120" height="115" as="geometry" />
         </mxCell>
-        <mxCell id="ocYWoTMkez_evRyGjRub-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="ocYWoTMkez_evRyGjRub-66" target="ocYWoTMkez_evRyGjRub-32">
+        <mxCell id="ocYWoTMkez_evRyGjRub-70" value="1V1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontColor=#000000;" edge="1" parent="1" source="ocYWoTMkez_evRyGjRub-66" target="ocYWoTMkez_evRyGjRub-32">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="970" y="760" />

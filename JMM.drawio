@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T03:01:19.459Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="Up8M8ONHBe72K4IYOqmM" version="17.4.5" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-04-21T03:33:37.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="apulmQE36IYZr96VKP4z" version="17.4.5" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="JMM、8大原子操作">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -571,7 +571,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ltOgWHCsxM675Fd2XMv0" name="AQS">
-    <mxGraphModel dx="1887" dy="1053" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -877,7 +877,7 @@
         <mxCell id="wj5Of5VYxgW58STwnZca-100" value="" style="endArrow=none;dashed=1;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="350" y="194.81999999999996" as="sourcePoint" />
-            <mxPoint x="1020" y="194" as="targetPoint" />
+            <mxPoint x="2060" y="192" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wj5Of5VYxgW58STwnZca-101" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="wj5Of5VYxgW58STwnZca-14">
@@ -886,11 +886,131 @@
             <mxPoint x="1140" y="284" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wj5Of5VYxgW58STwnZca-102" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-14">
+        <mxCell id="wj5Of5VYxgW58STwnZca-111" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-103" target="wj5Of5VYxgW58STwnZca-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-103" value="unlock" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="120" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-114" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-109" target="wj5Of5VYxgW58STwnZca-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-109" value="release(1)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2020" y="270" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-110" value="" style="endArrow=none;dashed=1;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-14" target="wj5Of5VYxgW58STwnZca-109">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="272.5" y="295.2299999999999" as="sourcePoint" />
-            <mxPoint x="1019" y="285" as="targetPoint" />
+            <mxPoint x="490" y="285" as="sourcePoint" />
+            <mxPoint x="2100" y="285" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-112" value="" style="endArrow=none;dashed=1;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="wj5Of5VYxgW58STwnZca-113">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="397" as="sourcePoint" />
+            <mxPoint x="1980" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-117" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-113" target="wj5Of5VYxgW58STwnZca-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-122" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-113" target="wj5Of5VYxgW58STwnZca-119">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-113" value="tryRelease()" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2003.75" y="374" width="102.5" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-118" value="true" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-115" target="wj5Of5VYxgW58STwnZca-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-115" value="h != null &amp;amp;&amp;amp;&lt;br&gt;head.waitStatus != 0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1991.88" y="470" width="126.25" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-132" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-116" target="wj5Of5VYxgW58STwnZca-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-116" value="撤销CLH队列中某一个NOde的对应线程的阻塞unparkSuccessor（head）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1967.51" y="585" width="174.99" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-125" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-119" target="wj5Of5VYxgW58STwnZca-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-119" value="计算新的state&lt;br&gt;c = getState().releases&lt;br&gt;设置state&lt;br&gt;setState(c)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2147.49" y="310" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-123" value="返回false" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-120" target="wj5Of5VYxgW58STwnZca-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-126" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-120" target="wj5Of5VYxgW58STwnZca-121">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-120" value="最新的状态是否为0c == 0?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2166.2299999999996" y="420" width="102.5" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-124" value="返回true" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-121" target="wj5Of5VYxgW58STwnZca-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-121" value="设置持有Sync对象的线程为null" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2153.7299999999996" y="496" width="127.51" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-133" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-127" target="wj5Of5VYxgW58STwnZca-128">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-127" value="恢复head的waitStatus为0&lt;br&gt;compareAndSetWaitStatus(node,ws,0);" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2180" y="555" width="240" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-134" value="不为null" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-128" target="wj5Of5VYxgW58STwnZca-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-135" value="为null" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-128" target="wj5Of5VYxgW58STwnZca-131">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-128" value="取head后的一个Node&lt;br&gt;Node s = node.next();" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2236.2499999999995" y="610" width="127.51" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-137" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-129" target="wj5Of5VYxgW58STwnZca-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-129" value="取head后的一个Node&lt;br&gt;Node s = node.next();" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2179.9999999999995" y="710" width="127.51" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-136" value="找到了对应的Node" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="wj5Of5VYxgW58STwnZca-131" target="wj5Of5VYxgW58STwnZca-129">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-131" value="从tail节点开始往前遍历，找到最前边的waitStatus小于等于0的Node" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2450" y="705" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-138" value="这里的等于0的情况是针对Node为CLH的tail的情况" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2470" y="765" width="150" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-149" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1848" y="770" width="440" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-139" value="保证CLH队列中所有Node的waitStatus为-1；&lt;br&gt;只会有head中的waitStatus会在0 | -1 之间切换；&lt;br&gt;每一个Node的waitStatus由其后续节点对应的线程保证；" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;verticalAlign=top;" vertex="1" parent="wj5Of5VYxgW58STwnZca-149">
+          <mxGeometry width="440" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-148" value="" style="group" vertex="1" connectable="0" parent="wj5Of5VYxgW58STwnZca-149">
+          <mxGeometry x="100" y="80" width="330" height="235" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-140" value="返回true，让当前线程被阻塞" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry x="40" y="40" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-141" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;SIGNAL(-1)&lt;/span&gt;&lt;br style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250);&quot;&gt;&lt;span style=&quot;color: rgb(0, 0, 0); font-family: helvetica; font-size: 12px; font-style: normal; font-weight: 400; letter-spacing: normal; text-align: center; text-indent: 0px; text-transform: none; word-spacing: 0px; background-color: rgb(248, 249, 250); display: inline; float: none;&quot;&gt;表示当前线程可以安全进行阻塞&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry x="40" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-142" value="循环移除CLH中当前Node以及其之前连续的状态为CANCELLED的Node" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry x="40" y="116" width="220" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-143" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;CANCELLED(1)&lt;/span&gt;&lt;br style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250)&quot;&gt;&lt;div style=&quot;text-align: center&quot;&gt;&lt;font face=&quot;helvetica&quot;&gt;当前Node因为超时或中断被取消&lt;/font&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry x="40" y="76" width="190" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-144" value="设置前驱节点的等待状态为SIGNAL&lt;br&gt;compareAndSetWaitStatus(pred,ws,Node.SIGNAL);" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry x="40" y="195" width="290" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-145" value="&lt;span style=&quot;color: rgb(0 , 0 , 0) ; font-family: &amp;#34;helvetica&amp;#34; ; font-size: 12px ; font-style: normal ; font-weight: 400 ; letter-spacing: normal ; text-align: center ; text-indent: 0px ; text-transform: none ; word-spacing: 0px ; background-color: rgb(248 , 249 , 250) ; display: inline ; float: none&quot;&gt;其他状态(0 | -2 | -3)&lt;br&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry x="40" y="171" width="190" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-146" value="判断当前线程所属节点的前驱节点的等待状态&lt;br&gt;pred.waitStatus" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
+          <mxGeometry y="17" width="20" height="210" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

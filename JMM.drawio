@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-04-21T03:33:37.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="apulmQE36IYZr96VKP4z" version="17.4.5" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-04-21T03:36:33.366Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36 Edg/100.0.1185.44" etag="xWfZ_pd7rmToxxmu4Nry" version="17.4.5" type="github" pages="4">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="JMM、8大原子操作">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1011,6 +1011,9 @@
         </mxCell>
         <mxCell id="wj5Of5VYxgW58STwnZca-146" value="判断当前线程所属节点的前驱节点的等待状态&lt;br&gt;pred.waitStatus" style="shape=curlyBracket;whiteSpace=wrap;html=1;rounded=1;labelPosition=left;verticalLabelPosition=middle;align=right;verticalAlign=middle;" vertex="1" parent="wj5Of5VYxgW58STwnZca-148">
           <mxGeometry y="17" width="20" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="wj5Of5VYxgW58STwnZca-150" value="1.如果Sync对象没有被线程持有，且当前线程中没有等待的线程，则直接获取锁；&lt;br&gt;2.如果Sync被线程持有且持有线程是当前线程，则修改Sync对象的state属性" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="30" y="382.5" width="180" height="105" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-07-01T03:42:57.752Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="KzyB4ZBZob-2TyhdMmyi" version="18.2.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-07-01T03:55:59.923Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36 Edg/103.0.1264.37" etag="8AkUpOWqlHKlpJjCLHMT" version="18.2.0" type="github" pages="2">
   <diagram id="8skLguvf635ecXUFe-go" name="REC">
     <mxGraphModel dx="1038" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -97,7 +97,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ggB9Ii0vSqucwMu3nW_F" name="MAIN">
-    <mxGraphModel dx="2076" dy="2327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1887" dy="2222" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -722,6 +722,72 @@
         </mxCell>
         <mxCell id="rGKaeVAHW1Yakes5QTDN-259" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rGKaeVAHW1Yakes5QTDN-36" target="rGKaeVAHW1Yakes5QTDN-186">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-266" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2250" y="620" width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-261" value="短信服务" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-266">
+          <mxGeometry width="340" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-262" value="优e贷批量发送短信" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-266">
+          <mxGeometry x="15" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-263" value="逾期一至十天发送短信" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-266">
+          <mxGeometry x="125" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-265" value="还款前5天短信通知" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-266">
+          <mxGeometry x="235" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-275" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="2250" y="400.75" width="340" height="149.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-268" value="信贷_ODS" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry width="340" height="149.5" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-269" value="台账基本信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry x="15" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-270" value="台账金额信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry x="125" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-271" value="还款计划新开户信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry x="235" y="30" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-272" value="还款计划变更信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry x="15" y="93.5" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-273" value="当日回收信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry x="125" y="93.5" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-274" value="计提利息信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="rGKaeVAHW1Yakes5QTDN-275">
+          <mxGeometry x="235" y="93.5" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-276" value="传统核心利率信息同步" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2322.5" y="320" width="195" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-277" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rGKaeVAHW1Yakes5QTDN-186" target="rGKaeVAHW1Yakes5QTDN-276">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2220" y="475" />
+              <mxPoint x="2220" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-278" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rGKaeVAHW1Yakes5QTDN-186" target="rGKaeVAHW1Yakes5QTDN-268">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2250" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rGKaeVAHW1Yakes5QTDN-279" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rGKaeVAHW1Yakes5QTDN-186" target="rGKaeVAHW1Yakes5QTDN-261">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2220" y="475" />
+              <mxPoint x="2220" y="666" />
+              <mxPoint x="2250" y="666" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

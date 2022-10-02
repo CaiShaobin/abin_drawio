@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-02T06:04:11.829Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="CM3B8k7GviSCbbCT1YEi" version="20.3.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-10-02T06:15:52.142Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="YwRd4k13PV1KXEtKUIEG" version="20.3.7" type="github" pages="2">
   <diagram id="qvuIZnQiTntRM78g6APV" name="IOC">
     <mxGraphModel dx="1609" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -333,7 +333,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ohbw1QyEMFirUU7Xk6Wy" name="AOP">
-    <mxGraphModel dx="-64" dy="1973" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1247" dy="2395" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -854,16 +854,55 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="o3ybNgjZMTF1ACStWOu2-171" value="是否满足创建代理的条件&lt;br&gt;即：eligibleAdvisors添加了符合match的通知" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="3890" y="780" width="190" height="80" as="geometry" />
+          <mxGeometry x="3890" y="746" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-178" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-173" target="o3ybNgjZMTF1ACStWOu2-175">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-182" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-173" target="o3ybNgjZMTF1ACStWOu2-180">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="o3ybNgjZMTF1ACStWOu2-173" value="createProxy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="4140" y="790" width="120" height="60" as="geometry" />
+          <mxGeometry x="4140" y="756" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-179" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-175" target="o3ybNgjZMTF1ACStWOu2-177">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="o3ybNgjZMTF1ACStWOu2-175" value="ProxyFactory" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
-          <mxGeometry x="4300" y="800" width="180" height="100" as="geometry" />
+          <mxGeometry x="4295" y="736" width="180" height="100" as="geometry" />
         </mxCell>
         <mxCell id="o3ybNgjZMTF1ACStWOu2-176" value="getProxy()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="4330" y="830" width="120" height="60" as="geometry" />
+          <mxGeometry x="4325" y="766" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-190" value="有接口" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-177" target="o3ybNgjZMTF1ACStWOu2-186">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-191" value="无接口；proxyTargetClass = ture" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-177" target="o3ybNgjZMTF1ACStWOu2-187">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-177" value="createAopProxy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4683.5" y="854" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-184" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="3905" y="854" width="590" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-180" value="&lt;b&gt;决定使用哪种动态代理&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-184">
+          <mxGeometry width="590" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-183" value="&lt;pre style=&quot;background-color: rgb(43, 43, 43); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(169, 183, 198);&quot;&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;如果设置了&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt; &amp;lt;aop:aspectj-autoproxy proxy-target-class=&quot;true&quot;/&amp;gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;不会进&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;if&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;，说明强制使用&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;cglib&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;if &lt;/span&gt;(!proxyFactory.isProxyTargetClass()) {&lt;br&gt;   &lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;内部设置的 ，   配置类就会设置这个属性&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;   &lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;if &lt;/span&gt;(shouldProxyTargetClass(beanClass&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;, &lt;/span&gt;beanName)) {&lt;br&gt;      proxyFactory.setProxyTargetClass(&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;true&lt;/span&gt;)&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;   &lt;/span&gt;}&lt;br&gt;   &lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;else &lt;/span&gt;{&lt;br&gt;      &lt;span style=&quot;color: rgb(128, 128, 128);&quot;&gt;// &lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;检查有没有接口&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(128, 128, 128); font-family: 宋体, monospace;&quot;&gt;      &lt;/span&gt;evaluateProxyInterfaces(beanClass&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;, &lt;/span&gt;proxyFactory)&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;   &lt;/span&gt;}&lt;br&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-184">
+          <mxGeometry x="5" y="25" width="580" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-186" value="jdkDynamicProxy" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="4509" y="965" width="181" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-187" value="CglibAopProxy" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="4814" y="964" width="181" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-188" value="newProxyInstance()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4515.5" y="1001.5" width="168" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-189" value="createProxyClassAndInstance()" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4820.5" y="1000.5" width="168" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

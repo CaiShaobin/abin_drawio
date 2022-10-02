@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-02T01:34:27.474Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="-1Sk9zo2TZTQhFTzRyEc" version="20.3.7" type="github">
+<mxfile host="app.diagrams.net" modified="2022-10-02T01:52:08.946Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="2VQeMzgYFb1OZmAhE5p9" version="20.3.7" type="github" pages="2">
   <diagram id="qvuIZnQiTntRM78g6APV" name="IOC">
-    <mxGraphModel dx="1815" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1609" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -328,6 +328,71 @@
         </mxCell>
         <mxCell id="MREfT_TlNmzk7hpgMhRm-1" value="AOP的加载时机：&lt;br&gt;调用初始化后的那个BeanPostProcessor会拿到所有的advisors&lt;br&gt;循环当前Bean做配对&lt;br&gt;如果配对成功，为当前Bean创建动态代理" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="1357.5" y="650" width="420" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ohbw1QyEMFirUU7Xk6Wy" name="AOP">
+    <mxGraphModel dx="-229" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-1" target="8xaMCN1twDKYoeSOG0iT-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1381" y="104.99999999999989" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-1" value="AOP做了什么？&lt;br&gt;1.找出所有的切面类&lt;br&gt;2.解析出所有的advice并保存&lt;br&gt;3.创建一个动态代理类&lt;br&gt;4.调用被代理类的方法时，找到他所有的增强器，并增强当前方法" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="911" y="65" width="420" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-3" target="8xaMCN1twDKYoeSOG0iT-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="105" />
+              <mxPoint x="1580" y="40" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-3" target="8xaMCN1twDKYoeSOG0iT-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-3" target="8xaMCN1twDKYoeSOG0iT-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1580" y="105" />
+              <mxPoint x="1580" y="160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-3" value="@EnableAspectJAutoProxy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1391" y="85" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-5" value="AspectjAutoProxyRegistrar&lt;br&gt;#registerBeanDefinitions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="20" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-6" value="AopConfigUtils&lt;br&gt;#registerAspectJAnnotationAutoProxyCreatorIfNecessary" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="85" width="340" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-7" target="8xaMCN1twDKYoeSOG0iT-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-7" value="AopConfigUtils&lt;br&gt;#registerOrEscalateApcAsRequired" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1600" y="145" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-8" target="8xaMCN1twDKYoeSOG0iT-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="8xaMCN1twDKYoeSOG0iT-8" target="8xaMCN1twDKYoeSOG0iT-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-8" value="AnnotationAwareAspectJAutoProxyCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1880" y="145" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-9" value="AbstractAutoProxyCreator" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="105" width="240" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="8xaMCN1twDKYoeSOG0iT-20" value="BeanPostProcess的9次调用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2160" y="180" width="240" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

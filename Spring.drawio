@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-02T02:26:49.561Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="8msMoo60rPulQAy5tE-z" version="20.3.7" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-10-02T03:38:35.887Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="OWmTnOrHLT2CLq9IFX8l" version="20.3.7" type="github" pages="2">
   <diagram id="qvuIZnQiTntRM78g6APV" name="IOC">
     <mxGraphModel dx="1609" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -333,10 +333,13 @@
     </mxGraphModel>
   </diagram>
   <diagram id="ohbw1QyEMFirUU7Xk6Wy" name="AOP">
-    <mxGraphModel dx="-138" dy="1801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="675" dy="1850" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-26" value="for(beanNames)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="2755" y="820" width="190" height="390" as="geometry" />
+        </mxCell>
         <mxCell id="8xaMCN1twDKYoeSOG0iT-24" value="&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;基于@Import注解注册一个Bean的后置处理器" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="1571" y="-5" width="379" height="235" as="geometry" />
         </mxCell>
@@ -469,8 +472,223 @@
         <mxCell id="o3ybNgjZMTF1ACStWOu2-4" value="事务" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="2750" y="583.75" width="120" height="37.5" as="geometry" />
         </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-6" target="o3ybNgjZMTF1ACStWOu2-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="o3ybNgjZMTF1ACStWOu2-6" value="@Aspect" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2765" y="650" width="170" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-11" value="未被解析&lt;br&gt;if(aspectNames == null)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-8" target="o3ybNgjZMTF1ACStWOu2-10">
+          <mxGeometry x="-0.3333" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2850" y="790" />
+              <mxPoint x="2850" y="790" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-8" value="是否被解析" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2786.25" y="720" width="127.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-10" target="o3ybNgjZMTF1ACStWOu2-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-15" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-10" target="o3ybNgjZMTF1ACStWOu2-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-10" value="从容器中获得所有类型为Object的BeanNeam" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="850" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-12" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;String[] beanNames = BeanFactoryUtils.&lt;span style=&quot;font-style:italic;&quot;&gt;beanNamesForTypeIncludingAncestors&lt;/span&gt;(&lt;br&gt;      &lt;span style=&quot;color:#cc7832;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#9876aa;&quot;&gt;beanFactory&lt;/span&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;Object.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, true, false&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2990" y="847" width="480" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-14" target="o3ybNgjZMTF1ACStWOu2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-14" target="o3ybNgjZMTF1ACStWOu2-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-14" value="遍历所有beanName，解析出被@Aspect标记的类" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="940" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-16" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;if &lt;/span&gt;(&lt;span style=&quot;color:#cc7832;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#9876aa;&quot;&gt;advisorFactory&lt;/span&gt;.isAspect(beanType)) {&lt;/pre&gt;" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2990" y="955" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-18" target="o3ybNgjZMTF1ACStWOu2-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-23" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-18" target="o3ybNgjZMTF1ACStWOu2-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-18" value="提取Aspect类中所有的Advice方法" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-20" target="o3ybNgjZMTF1ACStWOu2-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-20" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;List&amp;lt;Advisor&amp;gt; classAdvisors = &lt;span style=&quot;color:#cc7832;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#9876aa;&quot;&gt;advisorFactory&lt;/span&gt;.getAdvisors(factory)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="1055" width="460" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-22" target="o3ybNgjZMTF1ACStWOu2-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-22" value="将提取的结果加入缓存中" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2790" y="1140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-24" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;this&lt;/span&gt;.&lt;span style=&quot;color:#9876aa;&quot;&gt;aspectFactoryCache&lt;/span&gt;.put(beanName&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;factory)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="whiteSpace=wrap;html=1;strokeColor=none;" vertex="1" parent="1">
+          <mxGeometry x="2960" y="1155" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-29" target="o3ybNgjZMTF1ACStWOu2-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-29" target="o3ybNgjZMTF1ACStWOu2-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-29" value="排除带有@Pointcut的方法" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3450" y="1040" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-32" target="o3ybNgjZMTF1ACStWOu2-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-32" value="将advice/pointcut等信息解析到Advisor中" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3580" y="1040" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-34" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;span style=&quot;color:#cc7832;&quot;&gt;if &lt;/span&gt;(AnnotationUtils.&lt;span style=&quot;font-style:italic;&quot;&gt;getAnnotation&lt;/span&gt;(method&lt;span style=&quot;color:#cc7832;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot;color:#bbb529;&quot;&gt;Pointcut&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class&lt;/span&gt;) == &lt;span style=&quot;color:#cc7832;&quot;&gt;null&lt;/span&gt;) {&lt;br&gt;   &lt;span style=&quot;color:#b389c5;&quot;&gt;methods&lt;/span&gt;.add(method)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3400" y="1169" width="440" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-42" target="o3ybNgjZMTF1ACStWOu2-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-42" value="&lt;pre style=&quot;text-align: left; background-color: rgb(43, 43, 43); color: rgb(169, 183, 198); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;Advisor advisor = getAdvisor(method&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;, &lt;/span&gt;lazySingletonAspectInstanceFactory&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;, &lt;/span&gt;advisors.size()&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;, &lt;/span&gt;aspectName)&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;if &lt;/span&gt;(advisor != &lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;null&lt;/span&gt;) {&lt;br&gt;   advisors.add(advisor)&lt;span style=&quot;color: rgb(204, 120, 50);&quot;&gt;;&lt;br&gt;&lt;/span&gt;}&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3750" y="1085" width="660" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-50" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="3980" y="1200" width="540" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-46" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;AspectJAnnotation&amp;lt;?&amp;gt; annotation =&lt;br&gt;   AbstractAspectJAdvisorFactory.&lt;span style=&quot;font-style:italic;&quot;&gt;findAspectJAnnotationOnMethod&lt;/span&gt;(method)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(43, 43, 43); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font color=&quot;#cc7832&quot;&gt;// 该方法旨在从所有方法中过滤出下列注解&lt;/font&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-50">
+          <mxGeometry width="540" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-48" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;annotationTypeMap&lt;/span&gt;.put(&lt;span style=&quot;color:#bbb529;&quot;&gt;Pointcut&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, &lt;/span&gt;AspectJAnnotationType.&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;AtPointcut&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;annotationTypeMap&lt;/span&gt;.put(&lt;span style=&quot;color:#bbb529;&quot;&gt;Around&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, &lt;/span&gt;AspectJAnnotationType.&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;AtAround&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;annotationTypeMap&lt;/span&gt;.put(&lt;span style=&quot;color:#bbb529;&quot;&gt;Before&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, &lt;/span&gt;AspectJAnnotationType.&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;AtBefore&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;annotationTypeMap&lt;/span&gt;.put(&lt;span style=&quot;color:#bbb529;&quot;&gt;After&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, &lt;/span&gt;AspectJAnnotationType.&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;AtAfter&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;annotationTypeMap&lt;/span&gt;.put(&lt;span style=&quot;color:#bbb529;&quot;&gt;AfterReturning&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, &lt;/span&gt;AspectJAnnotationType.&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;AtAfterReturning&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;br&gt;&lt;/span&gt;&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;annotationTypeMap&lt;/span&gt;.put(&lt;span style=&quot;color:#bbb529;&quot;&gt;AfterThrowing&lt;/span&gt;.&lt;span style=&quot;color:#cc7832;&quot;&gt;class, &lt;/span&gt;AspectJAnnotationType.&lt;span style=&quot;color:#9876aa;font-style:italic;&quot;&gt;AtAfterThrowing&lt;/span&gt;)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-50">
+          <mxGeometry y="70" width="540" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="o3ybNgjZMTF1ACStWOu2-50" source="o3ybNgjZMTF1ACStWOu2-46" target="o3ybNgjZMTF1ACStWOu2-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-55" value="是" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-51" target="o3ybNgjZMTF1ACStWOu2-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-51" value="判断当前方法是否标注了这些注解" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4570" y="1300" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-48" target="o3ybNgjZMTF1ACStWOu2-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-54" target="o3ybNgjZMTF1ACStWOu2-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-97" value="封装Advisor" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="o3ybNgjZMTF1ACStWOu2-78">
+          <mxGeometry x="-0.1973" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-54" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4460" y="1440" width="370" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-56" target="o3ybNgjZMTF1ACStWOu2-57">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-56" target="o3ybNgjZMTF1ACStWOu2-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-56" value="AtRound&lt;br&gt;环绕通知" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4502" y="1460" width="106" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-57" target="o3ybNgjZMTF1ACStWOu2-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-57" target="o3ybNgjZMTF1ACStWOu2-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-57" value="AtBefore&lt;br&gt;前置通知" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4502" y="1530" width="106" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-58" target="o3ybNgjZMTF1ACStWOu2-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-58" target="o3ybNgjZMTF1ACStWOu2-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-58" value="AtAfter&lt;br&gt;后置通知" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4502" y="1600" width="106" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-59" target="o3ybNgjZMTF1ACStWOu2-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-59" target="o3ybNgjZMTF1ACStWOu2-64">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-59" value="AtAfterReturning&lt;br&gt;返回通知" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4502" y="1670" width="106" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-60" target="o3ybNgjZMTF1ACStWOu2-65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-60" value="AtAfterThrowing&lt;br&gt;异常通知" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4502" y="1740" width="106" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-61" value="new AspectJAroundAdvice" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4628" y="1470" width="130" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-62" value="new AspectJMethodBeforeAdvice" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4628" y="1540" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-63" value="new AspectJAfterAdvice" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4628" y="1610" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-64" value="new AspectJAfterReturningAdvice" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4628" y="1680" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-65" value="new AspectJAfterThrowingAdvice" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="4628" y="1750" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-77" target="o3ybNgjZMTF1ACStWOu2-98">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-77" value="InstantiationModelAwarePointcutAdvisorImpl" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="4985" y="1555" width="300" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-81" value="point" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-77">
+          <mxGeometry x="5" y="65" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-82" value="point" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-77">
+          <mxGeometry x="85" y="65" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-83" value="aspect&lt;br&gt;Name" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-77">
+          <mxGeometry x="165" y="65" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-84" value="..." style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-77">
+          <mxGeometry x="245" y="65" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="o3ybNgjZMTF1ACStWOu2-81" target="o3ybNgjZMTF1ACStWOu2-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-96" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="4920" y="1770" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-90" value="AspectJExpressionPointcut" style="swimlane;startSize=20;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-96">
+          <mxGeometry width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-93" value="targeClass" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-96">
+          <mxGeometry x="20" y="25" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-94" value="expression" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-96">
+          <mxGeometry x="100" y="25" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-95" value="beanFactory" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="o3ybNgjZMTF1ACStWOu2-96">
+          <mxGeometry x="60" y="55" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="o3ybNgjZMTF1ACStWOu2-98" value="&lt;pre style=&quot;background-color:#2b2b2b;color:#a9b7c6;font-family:&#39;JetBrains Mono&#39;,monospace;font-size:9.8pt;&quot;&gt;advisors.add(advisor)&lt;span style=&quot;color:#cc7832;&quot;&gt;;&lt;/span&gt;&lt;/pre&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="5320" y="1615" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

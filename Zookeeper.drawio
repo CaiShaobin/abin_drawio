@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-10-06T07:28:24.281Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="MZeWqtu7re_BARCTDYlO" version="20.4.0" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-10-06T07:32:43.169Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53" etag="aOYnBmz_HdXwZG35Vcsv" version="20.4.0" type="github" pages="2">
   <diagram id="Qyq_4s0g2PtQ4fndFV1Z" name="非公平锁">
-    <mxGraphModel dx="509" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="727" dy="824" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -71,6 +71,9 @@
         </mxCell>
         <mxCell id="3XJC4oZfa2gU9FRdR8ai-23" value="delete /exclusive/lock" style="shape=note;size=20;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="860" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="lXI0Q2IoOoNB9pH27qWB-1" value="羊群效应：&lt;br&gt;1.非公平锁；&lt;br&gt;2.争抢资源导致性能下降；" style="shape=note;size=20;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="710" y="660" width="110" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T09:41:11.427Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="d2DwjZfcYT_9t84JJLvf" version="20.4.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-10-08T10:06:20.670Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="5jcf2y8n5tI1d658ANbO" version="20.4.0" type="github" pages="4">
   <diagram id="PwJhe1wjSh3MadkxkBSW" name="NameServer">
     <mxGraphModel dx="1220" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -135,7 +135,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="7tpIPlm6QJK9cWuUibea" name="Procuder">
+  <diagram id="7tpIPlm6QJK9cWuUibea" name="MessageStore">
     <mxGraphModel dx="1037" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -187,7 +187,7 @@
         <mxCell id="qDOl0TaXToG59cF-HHA2-7" value="RequestMessageService线程" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="470" y="300" width="150" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="qDOl0TaXToG59cF-HHA2-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qDOl0TaXToG59cF-HHA2-8" target="qDOl0TaXToG59cF-HHA2-10">
+        <mxCell id="qDOl0TaXToG59cF-HHA2-11" value="写入文件" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qDOl0TaXToG59cF-HHA2-8" target="qDOl0TaXToG59cF-HHA2-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="qDOl0TaXToG59cF-HHA2-24" value="拉取要转发的消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qDOl0TaXToG59cF-HHA2-8" target="qDOl0TaXToG59cF-HHA2-7">
@@ -223,6 +223,155 @@
         </mxCell>
         <mxCell id="qDOl0TaXToG59cF-HHA2-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qDOl0TaXToG59cF-HHA2-2" target="qDOl0TaXToG59cF-HHA2-5">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="yTXTeLZQcK08TXpiZ15z" name="Consumer">
+    <mxGraphModel dx="1864" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-1" value="PullMessageService" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="4" y="30" width="190" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-1" source="N7BtS0nyamSBo5LpFgfi-5" target="N7BtS0nyamSBo5LpFgfi-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-5" value="run" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-1">
+          <mxGeometry x="53" y="40" width="84" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-1" source="N7BtS0nyamSBo5LpFgfi-6" target="N7BtS0nyamSBo5LpFgfi-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-6" value="pullRequestQueue take()" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-1">
+          <mxGeometry x="31.5" y="110" width="127" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-10" value="pullMessage(PullRequest)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-1">
+          <mxGeometry x="20.75" y="190" width="148.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-14" value="pullMessage在发送pullMessageAysnc后即返回，拉取任务为异步操作" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-1">
+          <mxGeometry x="35" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-2" value="DefaultMQPushConsumerImpl" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="194" y="30" width="210" height="440" as="geometry">
+            <mxRectangle x="460" y="385" width="210" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-2" source="N7BtS0nyamSBo5LpFgfi-15" target="N7BtS0nyamSBo5LpFgfi-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-15" value="获取ProcessQueue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-2">
+          <mxGeometry x="46.5" y="50" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-2" source="N7BtS0nyamSBo5LpFgfi-16" target="N7BtS0nyamSBo5LpFgfi-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-16" value="消息拉取流控" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-2">
+          <mxGeometry x="46.5" y="110" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-2" source="N7BtS0nyamSBo5LpFgfi-17" target="N7BtS0nyamSBo5LpFgfi-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-17" value="获取主题订阅信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-2">
+          <mxGeometry x="46.5" y="170" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-2" source="N7BtS0nyamSBo5LpFgfi-18" target="N7BtS0nyamSBo5LpFgfi-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-18" value="构建信息拉取系统标记" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-2">
+          <mxGeometry x="38.25" y="230" width="133.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-2" source="N7BtS0nyamSBo5LpFgfi-19" target="N7BtS0nyamSBo5LpFgfi-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-19" value="获取Broker或FilterServer地址" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-2">
+          <mxGeometry x="38.25" y="290" width="133.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-20" value="pullMessageAsync" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-2">
+          <mxGeometry x="38.25" y="350" width="133.5" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-3" value="MQClientAPIImpl" style="swimlane;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="404" y="30" width="210" height="440" as="geometry">
+            <mxRectangle x="460" y="385" width="210" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-21" value="向服务端发送RequestCode.&lt;br&gt;PULL_MESSAGE" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
+          <mxGeometry x="46.5" y="40" width="117" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-3" source="N7BtS0nyamSBo5LpFgfi-22" target="N7BtS0nyamSBo5LpFgfi-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-22" value="返回拉取信息结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
+          <mxGeometry x="46.5" y="120" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-3" source="N7BtS0nyamSBo5LpFgfi-23" target="N7BtS0nyamSBo5LpFgfi-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-23" value="PullAPIWrapper编解码拉取结果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
+          <mxGeometry x="46.5" y="180" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-3" source="N7BtS0nyamSBo5LpFgfi-24" target="N7BtS0nyamSBo5LpFgfi-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-24" value="执行PullCallBack回调方法" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
+          <mxGeometry x="46.5" y="240" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-3" source="N7BtS0nyamSBo5LpFgfi-25" target="N7BtS0nyamSBo5LpFgfi-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-25" value="执行消息过滤逻辑" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
+          <mxGeometry x="46.5" y="300" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-26" value="将拉取的消息提交到消费者消费消息线程池" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
+          <mxGeometry x="46.5" y="360" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-4" value="PullMessageProcessor" style="swimlane;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="614" y="30" width="210" height="440" as="geometry">
+            <mxRectangle x="460" y="385" width="210" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="N7BtS0nyamSBo5LpFgfi-4" source="N7BtS0nyamSBo5LpFgfi-27" target="N7BtS0nyamSBo5LpFgfi-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-27" value="获取ProcessQueue" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-4">
+          <mxGeometry x="46.5" y="50" width="117" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-28" value="MessageStroe.&lt;br&gt;getMessage(包含信息过滤逻辑)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-4">
+          <mxGeometry x="46.5" y="110" width="117" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-10" target="N7BtS0nyamSBo5LpFgfi-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-20" target="N7BtS0nyamSBo5LpFgfi-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-21" target="N7BtS0nyamSBo5LpFgfi-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-28" target="N7BtS0nyamSBo5LpFgfi-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-20" target="N7BtS0nyamSBo5LpFgfi-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-44" value="将pullRequest添加到pullRequestQueue中" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.481;exitY=0.867;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="99" y="400" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="99" y="359" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="N7BtS0nyamSBo5LpFgfi-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="N7BtS0nyamSBo5LpFgfi-26">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="509" y="450" />
+              <mxPoint x="180" y="450" />
+              <mxPoint x="180" y="120" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T10:08:50.181Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="6CK4c5Hqj2rt43nn5qqZ" version="20.4.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-08T10:59:09.158Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="XdNdhNs0lWPvtwjMpQHL" version="20.4.0" type="github" pages="5">
   <diagram id="PwJhe1wjSh3MadkxkBSW" name="NameServer">
     <mxGraphModel dx="1220" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -228,7 +228,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yTXTeLZQcK08TXpiZ15z" name="Consumer">
-    <mxGraphModel dx="1542" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2555" dy="965" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -372,6 +372,52 @@
               <mxPoint x="180" y="120" />
             </Array>
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LCMppNUK6he7DoISJ8lX" name="DelayMessage">
+    <mxGraphModel dx="1481" dy="827" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-4" value="1.定义消息Topic和&lt;br&gt;message" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ajwxiyk1M38y4NBS8UUo-1" target="Ajwxiyk1M38y4NBS8UUo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-1" value="生产者" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="50" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-6" value="2.转发到延迟队列中" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Ajwxiyk1M38y4NBS8UUo-3" target="Ajwxiyk1M38y4NBS8UUo-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="175" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-11" value="5.将消息转发给目标Topic" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="Ajwxiyk1M38y4NBS8UUo-3" target="Ajwxiyk1M38y4NBS8UUo-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-3" value="CommitLog" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="150" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-9" value="3.延迟消息服务" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ajwxiyk1M38y4NBS8UUo-5" target="Ajwxiyk1M38y4NBS8UUo-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-5" value="ConsumeQueueSchedule_Topic_XXX&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="150" width="220" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-8" value="4.将消息重新存回CommitLog" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ajwxiyk1M38y4NBS8UUo-7" target="Ajwxiyk1M38y4NBS8UUo-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-7" value="ScheduleMessageServeic" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="50" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-13" value="6.消费者消费目标Topic中的消息" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ajwxiyk1M38y4NBS8UUo-10" target="Ajwxiyk1M38y4NBS8UUo-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-10" value="ConsumeQueueTarget" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="250" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Ajwxiyk1M38y4NBS8UUo-12" value="消费者" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="770" y="150" width="50" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

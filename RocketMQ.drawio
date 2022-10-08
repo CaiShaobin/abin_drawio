@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T11:53:33.030Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="WjLUqvripbmAyZemqmxY" version="20.4.0" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2022-10-08T11:53:55.900Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="5A6CQYvnp9NWSXy2ud7n" version="20.4.0" type="github" pages="6">
   <diagram id="PwJhe1wjSh3MadkxkBSW" name="NameServer">
     <mxGraphModel dx="1220" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -490,7 +490,7 @@
         <mxCell id="gHQbEcPqKTBsBW4bDR7y-7" value="RocketMQ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="350" y="70" width="120" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="gHQbEcPqKTBsBW4bDR7y-9" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxCell id="gHQbEcPqKTBsBW4bDR7y-9" value="MySQL" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
           <mxGeometry x="135" y="265" width="60" height="60" as="geometry" />
         </mxCell>
       </root>

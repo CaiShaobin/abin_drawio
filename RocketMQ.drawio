@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-10-08T10:06:20.670Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="5jcf2y8n5tI1d658ANbO" version="20.4.0" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2022-10-08T10:08:50.181Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.34" etag="6CK4c5Hqj2rt43nn5qqZ" version="20.4.0" type="github" pages="4">
   <diagram id="PwJhe1wjSh3MadkxkBSW" name="NameServer">
     <mxGraphModel dx="1220" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -228,7 +228,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="yTXTeLZQcK08TXpiZ15z" name="Consumer">
-    <mxGraphModel dx="1864" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1542" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -324,7 +324,7 @@
           <mxGeometry x="46.5" y="300" width="117" height="40" as="geometry" />
         </mxCell>
         <mxCell id="N7BtS0nyamSBo5LpFgfi-26" value="将拉取的消息提交到消费者消费消息线程池" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="N7BtS0nyamSBo5LpFgfi-3">
-          <mxGeometry x="46.5" y="360" width="117" height="40" as="geometry" />
+          <mxGeometry x="46.5" y="360" width="117" height="50" as="geometry" />
         </mxCell>
         <mxCell id="N7BtS0nyamSBo5LpFgfi-4" value="PullMessageProcessor" style="swimlane;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="614" y="30" width="210" height="440" as="geometry">

@@ -1,1 +1,48 @@
-<mxfile host="app.diagrams.net" modified="2022-10-23T07:33:52.968Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.47" version="20.4.1" etag="2f6w6ha3jYUuC5iZrVIJ" type="github"><diagram id="L5J_yVoIicrjuL4BosRv">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-10-23T10:31:58.462Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 Edg/106.0.1370.47" etag="ncNKVuOMDo0jD8WGpPD1" version="20.4.1" type="github">
+  <diagram id="L5J_yVoIicrjuL4BosRv" name="Role">
+    <mxGraphModel dx="1384" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="S-6g8fEXurTJTHP9bAXz-1" target="S-6g8fEXurTJTHP9bAXz-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-1" value="服务消费者&lt;br&gt;1.启动时根据接口名从注册中心获取服务地址并缓存；&lt;br&gt;2.根据负载均衡策略选出一个服务器地址进行服务调用；" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="70" y="210" width="340" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-6" value="获取服务器地址" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="S-6g8fEXurTJTHP9bAXz-2" target="S-6g8fEXurTJTHP9bAXz-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-2" value="注册中心&lt;br&gt;1.保存服务名与服务器地址映射关系&lt;br&gt;{服务名：List&amp;lt;URL&amp;gt;}&lt;br&gt;2.服务地址变动主动通知服务消费者" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="527.5" y="50" width="215" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-8" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.958;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1" source="S-6g8fEXurTJTHP9bAXz-3" target="S-6g8fEXurTJTHP9bAXz-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="690" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-9" value="1.服务名（接口名）&lt;br&gt;2.主机的地址和端口（URL）" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="S-6g8fEXurTJTHP9bAXz-3" target="S-6g8fEXurTJTHP9bAXz-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-3" value="服务提供者&lt;br&gt;1.提供服务的接口&lt;br&gt;2.提供实现类&lt;br&gt;3.注册服务（注册中心注册，本地注册）&lt;br&gt;4.暴露服务（启动Tomcat，NettyServer，接收并处理请求）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="860" y="190" width="330" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-4" value="监控中心&lt;br&gt;&lt;br&gt;统计服务调用的次数和调用时间" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="542.5" y="350" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="S-6g8fEXurTJTHP9bAXz-5" target="S-6g8fEXurTJTHP9bAXz-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-5" value="Invocation&lt;br&gt;1.接口名&lt;br&gt;2.方法名&lt;br&gt;3.方法参数类型列表&lt;br&gt;4.方法值列表" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="200" width="170" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="S-6g8fEXurTJTHP9bAXz-14" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="S-6g8fEXurTJTHP9bAXz-1" target="S-6g8fEXurTJTHP9bAXz-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="460" y="250" as="sourcePoint" />
+            <mxPoint x="510" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

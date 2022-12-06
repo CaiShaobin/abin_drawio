@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-12-05T06:50:49.843Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="5bU15u0evPm_pY3C2kT9" version="20.6.0" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2022-12-06T01:37:55.069Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" etag="ujQqqJQybdvHZ-QF6aO2" version="20.6.0" type="github" pages="3">
   <diagram id="qvuIZnQiTntRM78g6APV" name="IOC">
-    <mxGraphModel dx="2076" dy="1158" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1221" dy="681" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -209,6 +209,9 @@
         <mxCell id="ud_HsljI-EtgYpYAIuEM-43" value="BeanPostProcessor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1547" y="820" width="220" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="Bho6gTXBDfc11hDfitxe-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="ud_HsljI-EtgYpYAIuEM-46" target="Bho6gTXBDfc11hDfitxe-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="ud_HsljI-EtgYpYAIuEM-46" value="Aware" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="1912" y="775" width="100" height="45" as="geometry" />
         </mxCell>
@@ -345,6 +348,9 @@
         </mxCell>
         <mxCell id="ud_HsljI-EtgYpYAIuEM-38" value="BeanPostProcessor" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="1332" y="410" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Bho6gTXBDfc11hDfitxe-11" value="initialzeBean()&lt;br&gt;进入方法，首先调用三个aware方法：&lt;br&gt;1.BeanNameAware&lt;br&gt;2.BeanClassLoaderAware&lt;br&gt;3.BeanFactoryAware" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1912" y="670" width="420" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>

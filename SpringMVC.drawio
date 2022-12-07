@@ -1,1 +1,80 @@
-<mxfile host="app.diagrams.net" modified="2022-12-07T01:50:28.400Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" version="20.6.0" etag="MEL5s38FsPPdYk_ubTfW" type="github"><diagram id="60LpJp7XDSgUl6UrkKcB">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-12-07T02:12:13.979Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 Edg/107.0.1418.62" version="20.6.0" etag="8y1c1RvJDe8xLZ70ts9_" type="github">
+  <diagram id="ZWIu1rmyzfZC3o6bk5_o" name="Main_flow">
+    <mxGraphModel dx="975" dy="571" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jaQHl9SiuVznZKolcA-S-4" value="1.请求" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-2" target="jaQHl9SiuVznZKolcA-S-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-2" value="客户端" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="170" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-6" value="2.找处理器链" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-3" target="jaQHl9SiuVznZKolcA-S-5">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-10" value="4.处理器适配" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-3" target="jaQHl9SiuVznZKolcA-S-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-18" value="8.视图解析" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-3" target="jaQHl9SiuVznZKolcA-S-17">
+          <mxGeometry x="-0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-21" value="10.Model填充至View，渲染" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-3" target="jaQHl9SiuVznZKolcA-S-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-3" value="DispatcherServlet" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="414" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-7" value="3.返处理器链" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.75;entryY=0;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-5" target="jaQHl9SiuVznZKolcA-S-3">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-5" value="HandlerMapping" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="414" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-12" value="5.执行处理器方法" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-9" target="jaQHl9SiuVznZKolcA-S-11">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-16" value="7.返ModelAndView" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-9" target="jaQHl9SiuVznZKolcA-S-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-9" value="HandlerAdapter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="694" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-13" value="6.返ModelAndView" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-11" target="jaQHl9SiuVznZKolcA-S-9">
+          <mxGeometry x="0.5" relative="1" as="geometry">
+            <mxPoint x="734" y="370" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-11" value="Handler" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="694" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-19" value="9.返回View" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-17" target="jaQHl9SiuVznZKolcA-S-3">
+          <mxGeometry x="-0.5" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-17" value="ViewResolve" style="whiteSpace=wrap;html=1;rounded=1;fillColor=#cce5ff;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="414" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-23" value="11.返回" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="jaQHl9SiuVznZKolcA-S-20" target="jaQHl9SiuVznZKolcA-S-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-20" value="View视图&lt;br&gt;HTML/JSP/FreeMarker&lt;br&gt;..." style="whiteSpace=wrap;html=1;rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="130" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jaQHl9SiuVznZKolcA-S-24" value="HandlerExecutorChain&lt;br&gt;&lt;br&gt;HandlerInterceptor&lt;br&gt;Handler&lt;br&gt;..." style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fillColor=#dae8fc;strokeColor=#6c8ebf;size=16;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="560" y="200" width="200" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
